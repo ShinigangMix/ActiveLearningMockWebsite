@@ -1,0 +1,20 @@
+# --- Java/NetBeans Specific ---
+/build/
+/nbproject/private/
+/dist/
+/target/
+*.class
+*.war
+
+# --- Log files ---
+*.log
+/logs/
+
+# --- Operating System Files ---
+.DS_Store
+Thumbs.db
+
+# --- Database (Optional) ---
+# If your Derby database (UserDB) is inside your project folder 
+# and you don't want to upload the actual data records:
+/UserDB/

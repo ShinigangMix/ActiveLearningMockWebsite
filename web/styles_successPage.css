@@ -1,0 +1,196 @@
+.welcome-message {
+  
+  font-size: 1rem;
+  overflow: hidden;
+}
+
+.side-panel-button.active p {
+  color: #252323;
+}
+.side-panel-button p {
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+#databaseTable p {
+  font-size: 0.9rem;
+}
+
+.side-panel-button:hover p {
+  color: #252323;
+}
+
+#databaseTable progress[value] {
+  padding: 0px;
+}
+
+.progress-section input {
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 2px solid #ef6c0f;
+  border-radius: 5px;
+  color: white;
+  background-color: #ef6c0f;
+}
+
+.statistics-icon {
+  height: 3rem;
+  flex-shrink: 1;
+  border: 5px outset white;
+  border-radius: 1000px;
+}
+.statistics-container div {
+  display: flex;
+  /*! align-content: center; */
+  /*! justify-content: center; */
+  align-items: center;
+  border: 5px solid #1994ca;
+  padding: 0px 16px 0px 0px;
+  gap: 10px;
+  border-radius: 200px;
+  background: #1994ca;
+}
+.statistics-container h3 {
+  width: fit-content;
+  color: white;
+}
+
+.disable-outside-form {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.progress-section {
+  display: flex;
+  gap: 15px;
+}
+
+.course-description{
+    width: 100%;
+    font-size: 20px;
+}
+
+.std-course{
+   display: flex;
+flex-wrap: wrap;
+
+   margin: 10px 0px;
+}
+
+.std-course-inst{
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.progress-section progress{
+  height: 20px;
+}
+.progress-section{
+    display: flex;
+    align-items: center;
+    text-align: center;
+ justify-content: center;
+    margin: 0;
+    
+}
+.std-course-inst,.std-course-sched,.progress-section{
+    flex: 1;    
+    /*! min-width: 0; */    
+
+   background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    /*! margin: 5px; */
+    /*! padding: 10px; */
+align-content: center;
+    display: flex;
+    flex-flow: column;
+    padding: 10px;
+}
+
+.course-details-container .profile-pic {
+  margin: 0;
+  height: 3rem;
+}
+.std-course-sched {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  /*! justify-content: top; */
+}
+.std-course p {
+  text-align: center;
+  /*! align-items: center; */
+  /*! position: relative; */
+  /*! top: 0; */
+  /*! bottom: 2; */
+}
+
+
+progress[value] {
+  --w: 200px; /* the width*/
+  --color:  /* the progress color */linear-gradient(90deg,#F78C26,#eb5a01) 0/var(--w);
+  --background: lightgrey; /* the background color */
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: solid 2px #f78b25;
+  width: var(--w);
+  margin: 0 10px;
+  border-radius: 10em;
+  background: var(--background);
+}
+progress[value]::-webkit-progress-bar {
+  border-radius: 10em;
+  background: var(--background);
+}
+progress[value]::-webkit-progress-value {
+  border-radius: 10em;
+  background: var(--color);
+}
+progress[value]::-moz-progress-bar {
+  border-radius: 10em;
+  background: var(--color);
+}
+
+@media (max-width: 750px) {
+  .profile-pic {
+  margin: 0;
+  }
+  .profile-container {
+  justify-content: center;
+  }
+  
+  .welcome-message {
+        display: none;
+   }
+
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: Transparent background */
+}
+/* Firefox */
+/* Note: scrollbar-width is currently a Firefox-only property */
+/* You can use it in a @supports query to apply only to Firefox */
+@supports (scrollbar-width: none) {
+    /* Hide scrollbar */
+    .table-panel {
+        scrollbar-width: none;
+    }
+}
+
+.trash-can-icon:hover {
+    filter: invert(12%) sepia(51%) saturate(7441%) hue-rotate(356deg) brightness(122%) contrast(120%);
+    
+}

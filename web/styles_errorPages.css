@@ -1,0 +1,72 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tilt+Neon&display=swap");
+
+.errorMsg {
+    
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background: #252323;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 400px; 
+    /*! max-height: 500px; */
+    margin: 20px auto;
+    position: relative; 
+    top: 10%;
+    /*! animation: fadein 2s; */
+    width: clamp(200px,50%, 500px);
+    }
+h1{
+    text-align: center;
+}
+.errorMsg .exclamation, .errorMsg h1{
+    
+    margin-bottom: 10px;
+}
+
+.errorMsg button {
+    display: block;
+    margin: 0 auto; /* Center horizontally */
+    background-color: #cf6d2b;
+    color: white;
+    padding: 10px 40px;
+    margin-top: 10px; /* Adjust as needed */
+    border: none;
+    font-family: 'Verdana', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.errorMsg button:hover{
+    
+    background-color: #1F9BDE;
+}
+.errorMsg a {
+    text-decoration: none;
+}
+.errorMsg img{
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+}
+
+.errorMsg::before,
+.errorMsg::after{
+    content:"";
+    position: absolute;
+    inset: -.5rem;
+    z-index: -1;
+    background: conic-gradient(from var(--gradient-angle),red,red);
+    border-radius: inherit;
+animation: rotation 20s linear infinite;
+}
+
+.errorMsg::after{
+    filter: blur(3.5rem);
+}
+
